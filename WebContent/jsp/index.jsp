@@ -26,7 +26,7 @@
       
     
     </ul>
-    <a href="profile"> <button class="btn btn-outline-dark">Connexion</button></a>
+    <a href="login"> <button class="btn btn-outline-dark">Connexion</button></a>
   </div>
 </nav>
 <h1 class="m-5 text-dark text-center">NOTRE GALERIE</h1>
