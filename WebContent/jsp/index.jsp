@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,6 +36,19 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
+      <c:forEach items="${listePublic}" var="item">
+      	<div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+			
+            <div class="py-1">
+              <p class="ml-2">Photographe:vfghfhf Boubou Laye </p>  
+              <a href="detail_album" class="ml-2">Voir l'album</a>      
+            </div>
+          </div>
+        </div>
+      </c:forEach>
+      
       
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">

@@ -31,7 +31,7 @@
 <div class="bg-light w-75  rounded mt-5 p-5" style="margin-left:12.5%">
  <h3 class="text-center text-dark mb-5">Ajouter un album</h3>
 
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
 <div class="form-group">
     <label for="formGroupExampleInput">Nom de l'album</label>
     <input type="text" class="form-control" id="formGroupExampleInput" name="nom">

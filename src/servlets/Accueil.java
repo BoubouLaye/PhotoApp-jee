@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Dao.Albumdao;
+
 /**
  * Servlet implementation class Accueil
  */
@@ -22,6 +24,8 @@ public class Accueil extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		getServletContext().getRequestDispatcher(LISTE_VIEW).forward(request, response);
+		Albumdao albumdao = new Albumdao();
+		request.setAttribute("listePublic", albumdao.getPubllic());
 	}
 
 	/**
